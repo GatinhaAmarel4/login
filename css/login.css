@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "popins" sans-serif;
+}
+
+:root{
+--cor-h1-esquerdo: #77ffc8;
+--cor-h1-direito: #00ff88;
+--cor-fundo: #201b2c;
+--cor-input: #514869;
+--cor-sombra: #6056;
+--cor-btn: #00ff88;
+--cor-login: #00ff8052;
+
+}
+
+
+.login{
+
+    display: flex;
+    width: 100vw ;
+    height: 100vh;
+    background-color:var(--cor-fundo);
+    justify-content: center ;
+    align-items: center;
+
+}
+
+.login-esquerda{
+
+    width: 50vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-h1-esquerdo);
+}
+
+.img-esquerda{
+    width: 60%;
+    height: auto;
+}
+
+.login_direita{
+    
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+
+}
+
+.login-card{
+    width: 60%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.login-card > h1 {
+   color: var(--cor-h1-direito);
+    font-weight: 800 ;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    background-color: var(--cor-input);
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 10px 0px;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px;
+}
+
+.textfield > label{
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.btn-login{
+    background-color: var(--cor-btn); 
+    border: none;
+    width: 100%;
+    padding: 16px 0px;
+    margin: 8px 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #2b134b;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    box-shadow: 0px 10px  40px -12px var(--cor-login);
+}
+
+@media only screen and(max-width: 950px){
+    .login-card{
+        width:80% ;
+    }
+}
+
+@media only screen and(max-width:600px){
+    .login{
+        display: flex;
+        flex-direction : column;
+        height: auto;
+    }
+}
+
+.login-left > h1{
+    display: none;
+}
+
+.login-left{
+    width: 100%;
+    height: auto;
+}
+ 
